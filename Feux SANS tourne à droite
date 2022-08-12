@@ -8,8 +8,8 @@ The original search was:
 (
   // query part for: “highway=bus_stop and shelter=yes”
   node["highway"="traffic_signals"]["red_turn:right:bicycle"!="yes"]({{bbox}});
-  way["highway"="bus_stop"]["shelter"="yes"]({{bbox}});
-  relation["highway"="bus_stop"]["shelter"="yes"]({{bbox}});
+  way["highway"="traffic_signals"]["red_turn:right:bicycle"!="yes"]({{bbox}});
+  relation["highway"="traffic_signals"]["red_turn:right:bicycle"!="yes"]({{bbox}});
   // query part for: “railway=platform and shelter=yes”
   node["railway"="platform"]["shelter"="yes"]({{bbox}});
   way["railway"="platform"]["shelter"="yes"]({{bbox}});
