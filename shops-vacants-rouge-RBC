@@ -1,0 +1,16 @@
+[out:json][timeout:500];
+
+{{geocodeArea:"Région Bruxelles Capitale"}}->.searchArea;
+
+(
+  nwr[shop=vacant](area.searchArea);
+);
+
+out body center;
+>;
+out skel center qt;
+{{style:
+node[shop=vacant],way[shop=vacant],
+area[shop=vacant]
+{ color:red; fill-color:red; }
+}}
