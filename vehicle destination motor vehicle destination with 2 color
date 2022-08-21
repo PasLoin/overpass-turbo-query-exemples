@@ -8,6 +8,7 @@
   node["motor_vehicle"="destination"]({{bbox}});
   way["motor_vehicle"="destination"]({{bbox}});
   relation["motor_vehicle"="destination"]({{bbox}});
+  way["access"="destination"]({{bbox}});
 
 );
 // print results
@@ -21,4 +22,6 @@ node, way, area
 node[motor_vehicle=destination],way[motor_vehicle=destination],
 area[motor_vehicle=destination]
 { color:red; fill-color:red; }
+way[access=destination]
+{ color:green; fill-color:green; }
 }}
