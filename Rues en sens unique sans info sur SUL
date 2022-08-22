@@ -1,4 +1,4 @@
-[out:json][timeout:250];
+[out:json][timeout:2500];
 // gather results
 (
   // query part for: “oneway=yes”
@@ -7,6 +7,7 @@
   //node["oneway:bicycle"="yes"]({{bbox}});
   //way["oneway:bicycle"="yes"]({{bbox}});
   way["oneway"="yes"]["oneway:bicycle"!~"."]({{bbox}});
+  way["oneway:bicycle"="yes"]({{bbox}});
 );
 // print results
 out body;
