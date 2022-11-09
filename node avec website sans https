@@ -1,11 +1,12 @@
-[out:json][timeout:250];
+[out:xml]
+[timeout:250];
 // gather results
 (
-  // query part for: “website=* and website!~https”
+
   node["website"]["website"!~"https"]({{bbox}});
 
 );
 // print results
-out body;
+out meta;
 >;
-out skel qt;
+out meta qt;
