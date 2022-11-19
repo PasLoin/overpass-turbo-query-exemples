@@ -8,8 +8,8 @@ The original search was:
 (
   // query part for: “building=* and "ref:UrbIS"!=* and "source:geometry:ref"!=*”
   node["building"]["ref:UrbIS"!~".*"]["source:geometry:ref"!~".*"]({{bbox}});
-  way["building"]["ref:UrbIS"!~".*"]["source:geometry:ref"!~".*"]({{bbox}});
-  relation["building"]["ref:UrbIS"!~".*"]["source:geometry:ref"!~".*"]({{bbox}});
+  way["building"]["ref:UrbIS"!~".*"]["source:geometry:ref"!~".*"]({{bbox}})
+  ({{bbox}});
 );
 // print results
 out meta;/*fixed by auto repair*/
