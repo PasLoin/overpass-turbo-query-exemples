@@ -1,0 +1,12 @@
+[out:xml]/*fixed by auto repair*/[timeout:2500];
+// gather results
+(
+  // query part
+  node["building"="yes"]["version"="1"]({{bbox}});
+  way["building"="yes"]["ref:UrbIS"!~".*"](if:version() == 1)({{bbox}});
+  //relation["building"="yes"]["ref:UrbIS"!~".*"](if:version() == 1)({{bbox}});
+);
+// print results
+out meta;/*fixed by auto repair*/
+>;
+out meta qt;/*fixed by auto repair*/
