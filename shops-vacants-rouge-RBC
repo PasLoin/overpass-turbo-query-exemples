@@ -1,4 +1,4 @@
-[out:json][timeout:500];
+[out:xml]/*fixed by auto repair*/[timeout:500];
 
 {{geocodeArea:"Région Bruxelles Capitale"}}->.searchArea;
 
@@ -6,9 +6,9 @@
   nwr[shop=vacant](area.searchArea);
 );
 
-out body center;
+(._;>;); out meta;/*fixed by auto repair*/
 >;
-out skel center qt;
+(._;>;); out meta qt;/*fixed by auto repair*/
 {{style:
 node[shop=vacant],way[shop=vacant],
 area[shop=vacant]
