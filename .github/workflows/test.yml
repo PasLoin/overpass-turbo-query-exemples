@@ -6,4 +6,4 @@
     # The path to a directory to check the filenames.
     path: # default is ./
     # The regex pattern to match for each of the files in the given directory
-    pattern:*.overpassql # default is /.+/
+    pattern:/*.overpassql # default is /.+/
