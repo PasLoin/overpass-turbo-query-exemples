@@ -1,5 +1,5 @@
 name: Path lister example
-on: [pull]
+on: [pull_request]
 jobs:
   list:
     name: Path lister
