@@ -1,12 +1,16 @@
-[out:xml]/*fixed by auto repair*/[timeout:2500];
-// gather results
-(
-  // query part
-  node["building"="yes"]["version"="1"]({{bbox}});
-  way["building"="yes"]["ref:UrbIS"!~".*"](if:version() == 1)({{bbox}});
-  //relation["building"="yes"]["ref:UrbIS"!~".*"](if:version() == 1)({{bbox}});
+[out:json][timeout:2500];
+//{{geocodeArea:"Région Bruxelles Capitale"}}->.searchArea;
+//way ["highway"] ["maxspeed"="120"](area.searchArea);
+//way["building"="yes"]["ref:UrbIS"!~".*"](if:version() == 1)(newer:"2022-11-11T07:00:00Z")(area.searchArea);
+
+
+//out body;
+//>;
+//out skel qt;
+
+nwr[building]["ref:UrbIS"!~".*"](if:version() == 1)({{bbox}})->.all;
+(.all; - nwr.all(newer:"2010-01-01T00:00:00Z");
 );
-// print results
-out meta;/*fixed by auto repair*/
+out body;
 >;
-out meta qt;/*fixed by auto repair*/
+out skel qt;
