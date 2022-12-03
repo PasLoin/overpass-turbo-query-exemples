@@ -1,5 +1,5 @@
 name: Path lister example
-on: [push]
+on: [pull]
 jobs:
   list:
     name: Path lister
