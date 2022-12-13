@@ -1,5 +1,5 @@
 /* Orphan Nodes - untagged nodes that do not belong to a way */
-
+/* DISCLAIMER : do not delete orphean nodes without chechking all the history and asking yoursefl why it is present */
 [bbox:{{bbox}}];
 
 rel; > -> .r;
