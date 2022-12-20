@@ -1,4 +1,6 @@
 //Atlas: Buildings Crossing Highways 
+// Warning : can have a lot of false positive on complex urban environement
+
 [out:xml]/*fixed by auto repair*/[bbox:{{bbox}}];
 
 (
