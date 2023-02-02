@@ -5,23 +5,13 @@ Zoom to the area where you want to see the
 user's edits and hit "Run" to see those 
 edits visualized on the map. 
 -->
-
-<!-- enter OSM user here -->
-{{user=xxx}
-<!-- enter OSM user here -->
-
-<osm-script output="json">
-  <union>
-    <query type="node">
-       <user name="{{user}}"/>
-      <bbox-query {{bbox}}/>
-    </query>
-    <query type="way">
-       <user name="{{user}}"/>
-      <bbox-query {{bbox}}/>
-    </query>
-  </union>
-  <print mode="body"/>
-  <recurse type="down"/>
-  <print mode="skeleton"/>
-</osm-script>
+[out:json][timeout:25];
+// gather results
+(
+  // query part for: 
+  way(user:"ENTER_NAME_HERE")(newer:"2010-05-01T07:00:00Z")({{bbox}});
+);
+// print results
+out body;
+>;
+out skel qt;
