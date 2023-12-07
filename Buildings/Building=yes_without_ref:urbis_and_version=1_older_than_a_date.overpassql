@@ -1,5 +1,5 @@
 [out:xml]/*fixed by auto repair*/[timeout:2500];
-{{geocodeArea:"Région Bruxelles Capitale"}}->.searchArea;
+{{geocodeArea:"Brussel-Hoofdstad - Bruxelles-Capitale"}}->.searchArea;
 
 
 nwr[building]["ref:UrbIS"!~".*"](if:version() == 1)(area.searchArea)({{bbox}})->.all;
