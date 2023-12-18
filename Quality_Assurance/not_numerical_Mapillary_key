@@ -1,0 +1,4 @@
+[out:json];
+// Recherche de tous les objets ayant la clé "mapillary" mais dont la valeur n'est pas numérique
+nwr["mapillary"~"^[^0-9]+$"]({{bbox}});
+out meta;
