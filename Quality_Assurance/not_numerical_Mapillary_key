@@ -1,4 +1,6 @@
 [out:json];
+{{geocodeArea:"Belgium"}}->.searchArea;
+
 // Recherche de tous les objets ayant la clé "mapillary" mais dont la valeur n'est pas numérique
-nwr["mapillary"~"^[^0-9]+$"]({{bbox}});
+nwr["mapillary"~"^[^0-9]"](area.searchArea)({{bbox}});
 out meta;
