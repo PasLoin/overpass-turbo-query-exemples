@@ -1,6 +1,6 @@
 [out:json][timeout:500];
 
-{{geocodeArea:"Région Bruxelles Capitale"}}->.searchArea;
+{{geocodeArea:"Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest"}}->.searchArea;
 
 (
   nwr[shop](area.searchArea);
