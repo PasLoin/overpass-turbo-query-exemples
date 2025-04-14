@@ -5,6 +5,6 @@
 
   nwr["mapillary"~"^[^0-9]"](area.searchArea)({{bbox}});
 
-  way["mapillary"~"^(https?://|[^0-9])"](area.searchArea)({{bbox}});
+  nwr["mapillary"~"^(https?://|[^0-9])"](area.searchArea)({{bbox}});
 );
 out center meta;
